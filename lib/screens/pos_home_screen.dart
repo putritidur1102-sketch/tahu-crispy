@@ -137,7 +137,7 @@ class _PosHomeScreenState extends State<PosHomeScreen> {
             DropdownButton<int>(
               value: _unitPrice,
               items: [5000, 6000, 7000, 8000].map((v) => DropdownMenuItem(value: v, child: Text(_currency.format(v)))).toList(),
-              onChanged: (v) => setState(() => _unitPrice = v ?? _unitPrice),
+              onChanged: null,
             ),
           ]),
           const Divider(),
